@@ -26,4 +26,4 @@ const chatModel = mongoose.Schema(
 
 const Chat = mongoose.model("Chat", chatModel);
 // naming of model is "Chat" i.e from right side -> ("Chat", chatModel)
-model.exports = Chat;
+module.exports = Chat;
