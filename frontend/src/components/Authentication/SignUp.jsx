@@ -8,7 +8,6 @@ import {
   VStack,
   useToast,
 } from "@chakra-ui/react";
-// import { useToast } from "@chakra-ui/toast";
 import React, { useState } from "react";
 import axios from "axios";
 import { useHistory } from "react-router-dom";
@@ -21,7 +20,6 @@ const SignUp = () => {
   const [confirmPassword, setConfirmPassword] = useState();
   const [pic, setPic] = useState();
   const [picLoading, setPicLoading] = useState(false);
-  // const [loading, setPicLoading] = useState(false);
 
   const toast = useToast();
   const history = useHistory();
@@ -53,7 +51,6 @@ const SignUp = () => {
         .then((res) => res.json())
         .then((data) => {
           setPic(data.url.toString());
-          // console.log(data.url.toString());
           setPicLoading(false);
         })
         .catch((err) => {
@@ -95,7 +92,6 @@ const SignUp = () => {
       });
       return;
     }
-    // console.log(name, email, password, pic);
     try {
       const config = {
         headers: {
