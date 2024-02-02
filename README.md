@@ -12,6 +12,17 @@
 > 1. `npm start or npm run start`
 
 
+### Environment Variables: 
+Create a .env file in the root folder and add the following variables:
+
+
+- `PORT = your_server_port`
+- `MONGO_URI = your_mongodb_connection_string`
+- `JWT_SECRET = your_jwt_secret`
+
+Replace "your_server_port," "your_mongodb_connection_string," and "your_jwt_secret" with the appropriate values.
+
+
 --- 
 
 ## Technologies Used: 🔮
